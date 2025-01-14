@@ -1,6 +1,6 @@
 /*
 Name - Chanuka Ashan GUnawardena
-Module - Software COnstruction 1 (C programming)
+Module - Software Construction 1 (C programming)
 
 Description - Pupils are divided into eight groups for an athletic competiotion. This program determines the number of pupils in 
 each team and how many pupils remained left over with two classes with 24 pupils and the other two with 25 and 25.
