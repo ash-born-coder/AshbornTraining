@@ -1,6 +1,6 @@
 /*
 Name - Chanuka Ashan GUnawardena
-Module - Software COnstruction 1 (C programming)
+Module - Software Construction 1 (C programming)
 
 Description - This program calculates the weights 2^n of binary digits for n < 8 and prints them to the console.
 */
