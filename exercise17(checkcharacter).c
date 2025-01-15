@@ -14,13 +14,13 @@ int main() {
 	char chInput = 0;
 
 	printf("Enter a single character: ");
-	if (scanf("%c", &chInput) != 1)           //to check whether a single value is entered
-	{
-		printf("\nError reading input\n");
-		return 1;
-	}
+while (scanf("%c", &chInput) != 1)
+{
+	printf("Error input\n");
+	while (getchar() != '\n');
+}
 
-	//this if ´statements check hether the entered character is a digit, small latter, capital letter, or neither a digit nor a letter.
+	//this if Â´statements check hether the entered character is a digit, small latter, capital letter, or neither a digit nor a letter.
 	if ('0' <= chInput && chInput <= '9')
 	{
 		printf("\nThe entered character is the digit");
