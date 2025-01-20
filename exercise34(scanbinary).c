@@ -18,7 +18,7 @@ int main() {
 	printf("Enter the Binary pattern: ");
 	while(scanf("%s", binaryPattern) != 1){}
 
-	int result = binary2decimal(binaryPattern);
+	int result = scanBinaryInteger(binaryPattern);
 
 	if (result == -1)
 	{
