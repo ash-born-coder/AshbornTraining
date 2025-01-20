@@ -9,7 +9,7 @@ In case of an invaid input the function shall return a -1
 #include<stdio.h>
 #include<math.h>
 
-int binary2decimal(char *binaryPattern);
+int scanBinaryInteger(char *binaryPattern);
 
 int main() {
 
@@ -31,7 +31,7 @@ int main() {
 	return 0;
 }
 
-int binary2decimal(char *binaryPattern) {
+int scanBinaryInteger(char *binaryPattern) {
 
 	int length = 0;		//this is to calculate the length of the sequence
 	int decimalValue = 0;
