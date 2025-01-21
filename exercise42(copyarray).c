@@ -10,8 +10,8 @@ Description - This program copy the value of one array to another array
 
 int main() {
 
-	int sourceArray[SIZE] = { 1,2,5,9,11,20 };		//the source array
-	int copyArray[SIZE];							//the copy array
+	int sourceArray[SIZE] = { 1,2,5,9,11,20 };			//the source array
+	int copyArray[SIZE];						//the copy array
 
 	for (int i = 0; i < SIZE; i++)					//copying what ever is in the source array to copy array
 	{
