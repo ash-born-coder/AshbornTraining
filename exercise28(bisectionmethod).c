@@ -20,39 +20,38 @@ int main() {
 	double fXl = functionPass(varXl);
 	double fXr = functionPass(varXr);
 
-	if (((fXl < 0) || (fXr > 0)) && ((fXl > 0) || (fXr < 0)))		//checking if the corresponding y values for the variables input are in the same side or not
+	if (fXl * fXr < 0)		//checking if the corresponding y values for the variables input are in the same side or not
 	{
 		printf("There exist a zero-crossing in the interval %.2lf and %.2lf", varXl, varXr);
+
+		while ((varXr - varXl) > tolerance)
+		{
+			varXm = (varXl + varXr) / 2;
+			double fXm = functionPass(varXm);
+
+			printf("\nInterval: [%lf, %lf], Midpoint: %lf, f(Xm): %lf\n", varXl, varXr, varXm, fXm);
+
+			if (fXl * fXm < 0)					//checking if the variables are on the same or opposite sides
+			{
+				varXr = varXm;
+				fXr = fXm;
+
+			}
+			else
+			{
+				varXl = varXm;
+				fXr = fXm;
+			}
+
+		}
+		varXm = (varXl + varXr) / 2;			//final midpoint
+		printf("\nApproximation of zero-crossing: x = %.6lf", varXm);
+		printf("\nThe function value at x: f(x) = %.6lf is ", functionPass(varXm));
 	}
 	else
 	{
-		printf("There exist NO zero-crossing in the interval  %.2lf and %.2lf", varXl, varXr);
+		printf("There exist NO zero-crossing in the interval  %.2lf and %.2lf\n\n", varXl, varXr);
 	}
-	while ((varXr - varXl) > tolerance)
-	{
-		varXm = (varXl + varXr) / 2;
-		double fXm = functionPass(varXm);
-
-		printf("\nInterval: [%lf, %lf], Midpoint: %lf, f(Xm): %lf\n", varXl, varXr, varXm, fXm);
-
-		if (fXl * fXm < 0)					//checking if the variables are on the same or opposite sides
-		{
-			varXr = varXm;
-			fXr = fXm;
-
-		}
-		else
-		{
-			varXl = varXm;
-			fXr = fXm;
-		}
-
-	}
-	varXm = (varXl + varXr) / 2;			//final midpoint
-	printf("\nApproximation of zero-crossing: x = %.6lf", varXm);
-	printf("\nThe function value at x: f(x) = %.6lf is ", functionPass(varXm));
-
-
 	return 0;
 }
 
