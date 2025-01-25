@@ -13,10 +13,8 @@ double bisectionPass(double, double);
 
 int main() {
 
-	double varXl = 0;
-	double varXr = 4;
-	double varXm = 0;
-	
+	double varXl = 0.0;
+	double varXr = 4.0;
 
 	bisectionPass(varXl, varXr);
 	
