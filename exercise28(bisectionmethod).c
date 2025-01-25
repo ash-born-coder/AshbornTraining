@@ -20,7 +20,7 @@ int main() {
 	double fXl = functionPass(varXl);
 	double fXr = functionPass(varXr);
 
-	if (((fXl < 0) || (fXr > 0)) && ((fXl > 0) || (fXr < 0)))
+	if (((fXl < 0) || (fXr > 0)) && ((fXl > 0) || (fXr < 0)))		//checking if the corresponding y values for the variables input are in the same side or not
 	{
 		printf("There exist a zero-crossing in the interval %.2lf and %.2lf", varXl, varXr);
 	}
@@ -35,7 +35,7 @@ int main() {
 
 		printf("\nInterval: [%lf, %lf], Midpoint: %lf, f(Xm): %lf\n", varXl, varXr, varXm, fXm);
 
-		if (fXl * fXm < 0)
+		if (fXl * fXm < 0)					//checking if the variables are on the same or opposite sides
 		{
 			varXr = varXm;
 			fXr = fXm;
