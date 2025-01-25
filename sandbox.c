@@ -32,9 +32,8 @@ int main() {
 	for (int  i = 0; i < HISTO_SIZE; i++)
 	{
 		printf("%2d: %5d\n", i, histo[i]);
-		printf("Average value: %.1f\n", average);
 	}
-	
+	printf("Average value: %.1f\n", average);
 
 	return 0;
 }
