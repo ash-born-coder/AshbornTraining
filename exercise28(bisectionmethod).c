@@ -20,7 +20,7 @@ int main() {
 	double fXl = functionPass(varXl);
 	double fXr = functionPass(varXr);
 
-	if (((varXl < 0) || (varXr > 0)) && ((varXl > 0) || (varXr < 0)))
+	if (((fXl < 0) || (fXr > 0)) && ((fXl > 0) || (fXr < 0)))
 	{
 		printf("There exist a zero-crossing in the interval %.2lf and %.2lf", varXl, varXr);
 	}
