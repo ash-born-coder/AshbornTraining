@@ -37,11 +37,11 @@ char* invertString(const char* original)
 		length++;
 	}
 
-	char* inverse = (char*)malloc((length + 1) * sizeof(char));			//allocatiing memory for the inverse
+	char* inverse = (char*)malloc((length + 1) * sizeof(char));	//allocatiing memory for the inverse
 
 	if (inverse != NULL)
 	{
-		for (int i = 0; i < length; i++)								//assigning the inverse of the original 
+		for (int i = 0; i < length; i++)			//assigning the inverse of the original 
 		{
 			inverse[i] = original[length - i - 1];
 		}
@@ -62,7 +62,7 @@ int countChar(const char* original, char character)
 
 	for (int i = 0; i < length; i++)						
 	{
-		if (original[i] == character)									//formulating the nuber of character occurences 	
+		if (original[i] == character)				//formulating the nuber of character occurences 	
 		{
 			count++;
 		}
