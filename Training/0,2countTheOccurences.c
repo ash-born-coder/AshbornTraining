@@ -59,7 +59,7 @@ int occurences(int funcArray[], int toCheck, int length2)
 	for (int i = 0; i < length2; i++)
 	{
 		printf("funcArray[%d] = %d\n", i, funcArray[i]);
-		if (funcArray[i] = toCheck)
+		if (funcArray[i] == toCheck)
 		{
 			accumulated++;
 			printf("Found %d and incremented count to %d\n", toCheck, accumulated);
